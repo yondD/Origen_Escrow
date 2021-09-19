@@ -1,0 +1,1724 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* Header */
+
+main h1,
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 88px;
+    /* identical to box height */
+    color: #090169;
+}
+
+main h3,
+h4,
+h5 {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 130%;
+    color: #090169;
+}
+
+main h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-weight: 600;
+    font-size: 44px;
+    color: #090169;
+}
+
+header p,
+main p {
+    font-family: Roboto;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.menu-button {
+    display: none;
+}
+
+header {
+    background-image: url(../img/header/headear_bg.webp);
+    background-position: center center;
+    background-size: cover;
+}
+
+.scrollLogo {
+    display: none;
+}
+
+.header_fixed {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    width: 100%;
+    height: 135px;
+    top: 0;
+    left: 0;
+    background: #FFFFFF;
+    box-shadow: 0px 52px 135px rgba(142, 142, 142, 0.17), 0px 21.7244px 56.3998px rgba(142, 142, 142, 0.122205), 0px 11.6149px 30.154px rgba(142, 142, 142, 0.101338), 0px 6.51121px 16.9041px rgba(142, 142, 142, 0.085), 0px 3.45805px 8.97764px rgba(142, 142, 142, 0.0686618), 0px 1.43897px 3.7358px rgba(142, 142, 142, 0.0477948);
+    animation-name: show_header;
+    animation-duration: 1s;
+}
+
+.header_fixed form input {
+    border: 2px solid #000;
+    color: #000;
+    margin-top: 40px;
+}
+
+.header_fixed form .fas,
+.otherHeader form .fas {
+    color: #000!important;
+}
+
+.header_fixed img {
+    display: none;
+}
+
+.headerSearchScroll {
+    color: #000;
+}
+
+.header_fixed .scrollLogo {
+    display: block;
+    object-fit: contain;
+    margin-right: 40px;
+}
+
+.header_fixed .menu-list {
+    max-width: 500px;
+    margin-top: 50px;
+}
+
+.header_fixed .menu-link {
+    color: #000;
+    font-size: 16px;
+}
+
+@keyframes show_header {
+    0% {
+        opacity: 0;
+        top: -70px;
+    }
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 36px;
+    margin-top: 80px;
+}
+
+.menu-link {
+    font-size: 18px;
+    line-height: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 24px;
+    outline: none !important;
+}
+
+form input {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 29px;
+    padding-right: 71px;
+    background: transparent;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    margin-top: 70px;
+}
+
+form input:focus {
+    outline: none;
+}
+
+.menu-link:hover {
+    color: #4FFF6B;
+}
+
+.fa-search {
+    border: none;
+    background: none;
+    margin-left: -50px;
+    font-size: 20px;
+    color: #ffffff!important;
+}
+
+header h1 span {
+    color: #00FFFF;
+}
+
+.subHeader {
+    padding-top: 244px;
+    padding-bottom: 353px;
+}
+
+.subHeader h1,
+.subHeader p {
+    color: #ffffff;
+}
+
+.subHeaderBtn {
+    width: 212px;
+    height: 55px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.greenButton {
+    border: none;
+    background: #4FFF6B;
+    box-shadow: 0px 47px 140px rgba(0, 255, 27, 0.27), 0px 19.6355px 58.4887px rgba(0, 255, 27, 0.194091), 0px 10.4981px 31.2708px rgba(0, 255, 27, 0.160949), 0px 5.88513px 17.5302px rgba(0, 255, 27, 0.135), 0px 3.12555px 9.31014px rgba(0, 255, 27, 0.109051), 0px 1.30061px 3.87416px rgba(0, 255, 27, 0.0759093);
+    border-radius: 10px;
+}
+
+.transparentButton {
+    background: transparent;
+    border: 3px solid #4FFF6B;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: drop-shadow(0px 47px 140px rgba(0, 255, 27, 0.27)) drop-shadow(0px 19.6355px 58.4887px rgba(0, 255, 27, 0.194091)) drop-shadow(0px 10.4981px 31.2708px rgba(0, 255, 27, 0.160949)) drop-shadow(0px 5.88513px 17.5302px rgba(0, 255, 27, 0.135)) drop-shadow(0px 3.12555px 9.31014px rgba(0, 255, 27, 0.109051)) drop-shadow(0px 1.30061px 3.87416px rgba(0, 255, 27, 0.0759093));
+    border-radius: 10px;
+}
+
+
+/* about */
+
+.aboutTitle h2 {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.aboutTitle p {
+    /* font-size: 18px; */
+    text-align: center;
+    color: #505050;
+}
+
+.aboutFeatures {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.aboutFeaturesBlock {
+    display: flex;
+    margin-bottom: 75px;
+}
+
+.aboutBlockContent {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.aboutBlockContent h3 {
+    color: #000000;
+}
+
+.aboutBlockContent p {
+    font-size: 16px;
+    color: #505050;
+}
+
+.aboutFeaturesImg img {
+    object-fit: contain;
+    width: 700px;
+    height: 600px;
+    margin-top: -50px;
+}
+
+.aboutConnect {
+    display: flex;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.aboutConnectContent {
+    margin-top: 120px;
+    text-align: right;
+}
+
+.aboutConnectContent h2 {
+    text-align: right;
+}
+
+.aboutConnectContent p {
+    text-align: right;
+    color: #505050;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.aboutConnectContent button,
+.aboutApiContent button {
+    font-weight: bold;
+    font-size: 24px;
+    color: #FFFFFF;
+    padding: 18px 30px;
+}
+
+.aboutApi {
+    display: flex;
+    margin-bottom: 200px;
+}
+
+.weContent p a {
+    text-decoration: none;
+    color: #505050;
+}
+
+.aboutApiContent button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.aboutApiContent p {
+    color: #505050;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.aboutConnectImg img {
+    margin-top: -80px;
+}
+
+
+/* cooperation */
+
+.cooperationTitle h2 {
+    text-align: center;
+}
+
+.cooperationTitle p {
+    font-size: 18px;
+    text-align: center;
+    color: #505050;
+    margin-bottom: 100px;
+}
+
+.cooperationBlocks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cooperationSponsors {
+    margin-bottom: 150px;
+}
+
+.cooperationSponsors .binance {
+    margin-left: 270px;
+}
+
+.cooperationSponsors .igb {
+    margin-left: 260px;
+}
+
+.cooperationPersonCard {
+    background: #FFFFFF;
+    box-shadow: 0px 52px 135px rgba(142, 142, 142, 0.17), 0px 21.7244px 56.3998px rgba(142, 142, 142, 0.122205), 0px 11.6149px 30.154px rgba(142, 142, 142, 0.101338), 0px 6.51121px 16.9041px rgba(142, 142, 142, 0.085), 0px 3.45805px 8.97764px rgba(142, 142, 142, 0.0686618), 0px 1.43897px 3.7358px rgba(142, 142, 142, 0.0477948);
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+
+.cooperationPersonCardContent {
+    padding-left: 35px;
+    padding-top: 44px;
+    padding-bottom: 44px;
+}
+
+.cooperationPersonCardContent h4 {
+    font-size: 18px;
+    color: #2C2C2C;
+    margin-top: 17px;
+    margin-bottom: 10px;
+}
+
+.cooperationPersonCardContent p {
+    color: #090169;
+}
+
+.cooperationPersonCardContent .cooperationPersonCardText {
+    color: #505050;
+    width: 90%;
+}
+
+
+/* join */
+
+.joinTitle h1 {
+    text-align: center;
+}
+
+.joinTitle h1 span {
+    color: #00FFFF;
+}
+
+.joinTitle p {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 90px;
+    color: #505050;
+}
+
+.joinButtons {
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.joinButtons .greenButton,
+.joinButtons .transparentButton {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 34px;
+    color: #FFFFFF;
+}
+
+.joinButtons .transparentButton {
+    color: #4FFF6B;
+}
+
+.joinBtn {
+    width: 328px;
+    height: 69px;
+}
+
+
+/* footer */
+
+footer {
+    background: #090169;
+}
+
+.footerNav {
+    display: flex;
+    padding-top: 40px;
+    margin-bottom: 15px;
+}
+
+.footerLinks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerCol {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.footerCol a {
+    text-decoration: none;
+    /* font-weight: 500; */
+    font-size: 16px;
+    /* line-height: 22px; */
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 10px;
+}
+
+.footerBusiness .mainFooterLink,
+.footerBroker .mainFooterLink,
+.footerDeveloper .mainFooterLink,
+.footerCunsomer .mainFooterLink {
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.footerContact {
+    border-bottom: 3px solid skyblue
+}
+
+.footerContact a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.footerhelpLinks,
+.footercallLinks {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 40px;
+}
+
+.topLine {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.topLine a {
+    text-decoration: none;
+    color: #FFFFFF
+}
+
+.botLine {
+    text-align: center;
+    margin-top: 35px;
+    padding-bottom: 30px;
+    color: #FFFFFF;
+}
+
+.footerBall {
+    margin-left: 27px;
+    margin-right: 27px;
+}
+
+
+/* Consumer */
+
+.otherHeader .headerLink .logo {
+    display: none;
+}
+
+.otherMainHeader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 30px;
+    padding-bottom: 120px;
+    width: 100%;
+    height: 135px;
+    background: #FFFFFF;
+    box-shadow: 0px 52px 135px rgba(142, 142, 142, 0.17), 0px 21.7244px 56.3998px rgba(142, 142, 142, 0.122205), 0px 11.6149px 30.154px rgba(142, 142, 142, 0.101338), 0px 6.51121px 16.9041px rgba(142, 142, 142, 0.085), 0px 3.45805px 8.97764px rgba(142, 142, 142, 0.0686618), 0px 1.43897px 3.7358px rgba(142, 142, 142, 0.0477948);
+}
+
+.otherHeader {
+    margin-top: -50px;
+}
+
+.otherHeader .scrollLogo {
+    display: block;
+    width: 212px;
+    height: 112px;
+}
+
+.otherHeader .menu-list {
+    max-width: 450px;
+}
+
+.otherHeader .menu-list .menu-link {
+    font-size: 16px;
+    color: #000;
+}
+
+.otherHeader form input {
+    border: 2px solid #CCCCCC;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #000;
+}
+
+.otherHeader form .fa-search {
+    color: #000;
+    width: 35px;
+    height: 34px;
+}
+
+.otherMainWe {
+    background-image: url(../img/consumer/header/Logo.webp);
+    background-position: 500px -300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/* We */
+
+.we {
+    padding-top: 20px;
+    padding-top: 200px;
+}
+
+.whereNav p {
+    color: #C4C4C4;
+}
+
+.fa-chevron-right {
+    margin-right: 17px;
+    margin-left: 17px;
+    margin-bottom: 80px;
+}
+
+.whereNav p span {
+    color: #4FFF6B;
+}
+
+.weInformation {
+    display: flex;
+}
+
+.weInformation h1 {
+    font-size: 42px;
+    line-height: 54px;
+}
+
+.weInformation .weContent p {
+    font-weight: normal;
+    color: #505050;
+}
+
+.weInformation .weContent p:nth-child(2) {
+    margin-top: 40px;
+    margin-bottom: 120px;
+}
+
+.weContentBtn {
+    width: 328px;
+    height: 69px;
+    font-weight: 600;
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-top: 60px;
+}
+
+.weInfoBlock h3 {
+    line-height: 42px;
+    text-align: right;
+}
+
+.weInfoBlock p {
+    font-size: 12px;
+    line-height: 130%;
+    text-align: right;
+    color: #505050;
+}
+
+
+/* Works */
+
+.works {
+    margin-top: 150px;
+}
+
+.worksTitle h1 {
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.worksCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.worksCard {
+    width: 348px;
+    height: 412px;
+    background: #FFFFFF;
+    box-shadow: 0px 52px 135px rgba(142, 142, 142, 0.17), 0px 21.7244px 56.3998px rgba(142, 142, 142, 0.122205), 0px 11.6149px 30.154px rgba(142, 142, 142, 0.101338), 0px 6.51121px 16.9041px rgba(142, 142, 142, 0.085), 0px 3.45805px 8.97764px rgba(142, 142, 142, 0.0686618), 0px 1.43897px 3.7358px rgba(142, 142, 142, 0.0477948);
+    border-radius: 10px;
+}
+
+.worksCardContent {
+    margin-top: 75px;
+    margin-left: 49px;
+}
+
+.worksCard1,
+.worksCard2,
+.worksCard3,
+.worksCard4,
+.worksCard5,
+.worksCard6 {
+    background-repeat: no-repeat;
+    background-position: 15px 50px;
+}
+
+.worksCard1 {
+    background-image: url(../img/consumer/header/card_1.webp);
+}
+
+.worksCard2 {
+    background-image: url(../img/consumer/header/card_2.webp);
+}
+
+.worksCard3 {
+    background-image: url(../img/consumer/header/card_3.webp);
+}
+
+.worksCard4 {
+    background-image: url(../img/consumer/header/card_4.webp);
+}
+
+.worksCard5 {
+    background-image: url(../img/consumer/header/card_5.webp);
+}
+
+.worksCard6 {
+    background-image: url(../img/consumer/header/card_6.webp);
+}
+
+.worksCard2,
+.worksCard1,
+.worksCard3 {
+    margin-bottom: 120px;
+}
+
+.worksCard5,
+.worksCard6,
+.worksCard4 {
+    margin-bottom: 200px;
+}
+
+.worksCardContent h3 {
+    margin-bottom: 46px;
+}
+
+.worksCardContent p {
+    font-size: 16px;
+    line-height: 130%;
+    color: #505050;
+}
+
+
+/* Broker */
+
+.broker {
+    padding-top: 200px;
+}
+
+.becomeBroker {
+    display: flex;
+}
+
+.becomeBroker h1 {
+    font-size: 42px;
+    line-height: 59px;
+}
+
+.becomeBroker p {
+    color: #505050;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.becomeBrokerInfoBtn {
+    width: 328px;
+    height: 66px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 120px;
+}
+
+.becomeBrokerImg {
+    margin-top: -120px;
+}
+
+.becomeBrokerImg img {
+    margin-bottom: 190px;
+}
+
+.becomeBroker {
+    margin-bottom: 150px;
+}
+
+
+/* brokerExplanation */
+
+.brokerFaqTitle h1 {
+    line-height: 59px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.brokerFaqBlockTopLine {
+    padding: 25px 65px 14px 44px;
+    background: #FFFFFF;
+    box-shadow: 0px 52px 135px rgba(142, 142, 142, 0.17), 0px 21.7244px 56.3998px rgba(142, 142, 142, 0.122205), 0px 11.6149px 30.154px rgba(142, 142, 142, 0.101338), 0px 6.51121px 16.9041px rgba(142, 142, 142, 0.085), 0px 3.45805px 8.97764px rgba(142, 142, 142, 0.0686618), 0px 1.43897px 3.7358px rgba(142, 142, 142, 0.0477948);
+    border-radius: 10px;
+}
+
+.brokerFaqBlockBotLine {
+    background: #FFFFFF;
+    box-shadow: 0px 52px 135px rgba(142, 142, 142, 0.17), 0px 21.7244px 56.3998px rgba(142, 142, 142, 0.122205), 0px 11.6149px 30.154px rgba(142, 142, 142, 0.101338), 0px 6.51121px 16.9041px rgba(142, 142, 142, 0.085), 0px 3.45805px 8.97764px rgba(142, 142, 142, 0.0686618), 0px 1.43897px 3.7358px rgba(142, 142, 142, 0.0477948);
+    border-radius: 10px;
+}
+
+.brokerFaqBlockBotLine p {
+    padding: 31px 70px 27px 45px;
+    margin-top: -120px;
+}
+
+.brokerFaqBlockTopLine p,
+.brokerFaqBlockBotLine p {
+    font-weight: 500;
+    color: #505050;
+}
+
+.brokerFaqBlockTopLine p span,
+.brokerFaqBlockBotLine p span {
+    color: #090169;
+    font-weight: 800;
+}
+
+.brokerFaqBlockR {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.brokerHelp {
+    margin-bottom: 200px;
+}
+
+.brokerHelpTitle h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.brokerHelpTitle p {
+    text-align: center;
+    color: #505050;
+    margin-bottom: 60px;
+}
+
+.brokerHelpBlocks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.brokerHelpBlock p {
+    padding-top: 30px;
+    margin-top: 55px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    color: #505050;
+}
+
+.brokerHelpBlock1,
+.brokerHelpBlock2,
+.brokerHelpBlock3 {
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.brokerHelpBlock1 {
+    background-image: url(../img/broker/block_1.webp);
+}
+
+.brokerHelpBlock2 {
+    background-image: url(../img/broker/block_2.webp);
+}
+
+.brokerHelpBlock3 {
+    background-image: url(../img/broker/block_3.webp);
+}
+
+.brokerTrustTitle h1 {
+    font-size: 42px;
+    text-align: center;
+}
+
+.brokerTrustTitle p {
+    font-size: 16px;
+    text-align: center;
+    color: #505050;
+    margin-bottom: 70px;
+}
+
+.brokerTrustCard {
+    width: 348px;
+    height: 400px;
+}
+
+.readyBrokerTitle h1 {
+    text-align: center;
+}
+
+.readyBrokerTitle h1 span {
+    color: #00FFFF;
+}
+
+.readyBrokerTitle p {
+    text-align: center;
+    color: #505050;
+    margin-top: 20px;
+}
+
+.readyBrokerForm {
+    margin-left: 35px;
+}
+
+.readyBrokerForm form input {
+    height: 69px;
+    border: 3px solid #4FFF6B;
+    box-sizing: border-box;
+    box-shadow: drop-shadow(0px 47px 140px rgba(0, 255, 27, 0.27)) drop-shadow(0px 19.6355px 58.4887px rgba(0, 255, 27, 0.194091)) drop-shadow(0px 10.4981px 31.2708px rgba(0, 255, 27, 0.160949)) drop-shadow(0px 5.88513px 17.5302px rgba(0, 255, 27, 0.135)) drop-shadow(0px 3.12555px 9.31014px rgba(0, 255, 27, 0.109051)) drop-shadow(0px 1.30061px 3.87416px rgba(0, 255, 27, 0.0759093));
+    border-radius: 10px;
+    color: #000;
+}
+
+.readyBrokerForm form button {
+    width: 328px;
+    height: 67px;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    color: #FFFFFF
+}
+
+.readyBroker {
+    margin-bottom: 100px;
+}
+
+
+/* Business */
+
+.business {
+    padding-top: 200px;
+}
+
+.businessInfo {
+    display: flex;
+}
+
+.businessInfoContent h1 {
+    font-size: 42px;
+    line-height: 59px;
+}
+
+.businessInfoContent p {
+    margin-top: 40px;
+    line-height: 130%;
+    color: #505050;
+}
+
+.businessInfoImg {
+    margin-top: -130px;
+}
+
+.letsGo {
+    text-align: center;
+}
+
+.letsGo h5 {
+    text-align: center;
+    font-size: 18px;
+}
+
+.letsGo h5 span {
+    color: #00FFFF;
+}
+
+.btnArrowDown {
+    margin-top: 40px;
+    margin-bottom: 95px;
+    background: transparent;
+    border: none;
+}
+
+.businessPartnership {
+    display: flex;
+}
+
+.getPartnerBlocks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.getPartner h3 {
+    font-size: 36px;
+}
+
+.getPartner p {
+    font-size: 18px;
+    color: #505050;
+    /* margin-top: 30px; */
+    margin-bottom: 60px;
+}
+
+.getPartnerBtn {
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFFFFF;
+    width: 328px;
+    height: 66px;
+}
+
+.getPartnerBlock {
+    text-align: center;
+    width: 136px;
+    height: 219px;
+}
+
+.getPartnerBlock img {
+    margin-bottom: 20px;
+}
+
+.businessPartnership {
+    margin-bottom: 150px;
+}
+
+
+/* DEveloper */
+
+.developerPaymentsTitle h1 {
+    font-size: 42px;
+    line-height: 59px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.developerBenefits {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.developerBenefitBlock {
+    border-left: 10px solid #090169;
+}
+
+.developerBenefitBlock1,
+.developerBenefitBlock2 {
+    margin-bottom: 150px;
+}
+
+.developerBenefitBlock3,
+.developerBenefitBlock4 {
+    margin-bottom: 150px;
+}
+
+.developerBenefitBlockContent {
+    margin-left: 44px;
+}
+
+.developerBenefitBlockContent h4 {
+    margin-top: 15px;
+}
+
+.developerBenefitBlockContent p {
+    line-height: 130%;
+    color: #505050;
+    margin-top: 20px;
+}
+
+
+/* Help */
+
+.developerInfoContent p span {
+    font-weight: 600;
+}
+
+.helpHeaderBtn {
+    width: 328px;
+    height: 66px;
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+
+.helpInfo {
+    margin-bottom: 150px;
+}
+
+.helpContactsTitle h1 {
+    line-height: 59px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.helpCotnactsBlocks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.helpCotnactsBlock {
+    border-left: 10px solid #090169;
+    height: 180px;
+}
+
+.helpCotnacts {
+    margin-bottom: 150px;
+}
+
+.helpCotnactsBlockContent {
+    margin-top: 15px;
+    margin-left: 60px;
+}
+
+.helpCotnactsBlockContent1 {
+    margin-top: 45px;
+}
+
+.helpCotnactsBlockContent h5 {
+    font-size: 18px;
+    line-height: 29px;
+}
+
+.helpCotnactsBlockContent p {
+    width: 325px;
+    color: #505050;
+}
+
+.helpFawTitle h1 {
+    line-height: 59px;
+    margin-bottom: 85px;
+}
+
+.helpFaqBlock {
+    border-left: 10px solid #090169;
+    margin-bottom: 40px;
+}
+
+.helpFaqBlockContent {
+    margin-left: 25px;
+}
+
+.helpFaqBlockContent h5 {
+    font-size: 18px;
+    line-height: 29px;
+}
+
+.helpFaqBlockContent p {
+    font-size: 14px;
+    line-height: 22px;
+    color: #505050;
+}
+
+.helpFaqBlocks {
+    margin-bottom: 150px;
+}
+
+
+/* AdAptation */
+
+@media (max-width: 540px) {
+    .form-btn {
+        margin-left: 13px!important;
+    }
+    .menu-list {
+        display: none;
+    }
+    main .container {
+        padding: 0;
+    }
+    /* ---------- */
+    .menu-button {
+        border-radius: 5px;
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 35px;
+        width: 75px;
+        height: 5px;
+        background-color: #fff;
+        border: none;
+        cursor: pointer;
+        margin-top: 65px;
+        margin-right: -25px;
+    }
+    .menu-button:before {
+        border-radius: 5px;
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 75px;
+        height: 5px;
+        background-color: #fff;
+        transition: transform 0.2s;
+        margin-top: -15px;
+    }
+    .menu-button:after {
+        border-radius: 5px;
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 75px;
+        height: 5px;
+        background-color: #fff;
+        transition: transform 0.2s;
+        margin-top: 15px;
+    }
+    .other-menu-button {
+        margin-top: 35px;
+    }
+    .other-menu-button,
+    .other-menu-button:before,
+    .other-menu-button:after {
+        background: #505050;
+        height: 8px;
+        margin-right: 5px;
+    }
+    .otherHeader .menu-list .menu-link {
+        color: #fff;
+    }
+    .menu-button-active {
+        height: 0;
+        /* position: relative; */
+        z-index: 10;
+    }
+    .menu-button-active:before,
+    .menu-button-active:after {
+        background: #fff;
+    }
+    .menu-button-active:before {
+        transform: rotate(45deg);
+        margin-top: 0;
+        /* position: relative; */
+        z-index: 10;
+    }
+    .menu-button-active:after {
+        transform: rotate(-45deg);
+        margin-top: 0;
+        /* position: relative; */
+        z-index: 10;
+    }
+    .header-active {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: rgba(9, 1, 105);
+        width: 250px;
+        padding-bottom: 40px;
+    }
+    .header-active form .fas {
+        color: #fff!important;
+    }
+    .header-active {
+        position: fixed;
+        z-index: 5;
+        display: flex;
+        height: 100%;
+        width: 100%;
+    }
+    .otherMainHeader .header-active {
+        height: 850px;
+    }
+    .header-active form input {
+        margin-top: -200px;
+    }
+    .header-active .menu-list {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        margin-top: -100px;
+    }
+    .header-active .menu-list .menu-link {
+        margin-bottom: 40px;
+        font-size: 24px;
+    }
+    .otherMainHeader .header-active .headerLink .scrollLogo {
+        display: none;
+    }
+    .otherMainHeader .header-active .headerLink .logo {
+        display: block;
+        margin-top: 50px;
+        margin-left: 15px;
+    }
+    /* -------------- */
+    .aboutFeaturesImg img,
+    .aboutConnect img,
+    .aboutApi img,
+    .header img {
+        max-width: 80%;
+        object-fit: contain;
+    }
+    .aboutFeaturesBlock img {
+        object-fit: contain;
+    }
+    .aboutFeatures,
+    .aboutConnect,
+    .aboutApi,
+    .footerNav,
+    .header {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .aboutConnectImg {
+        order: 1;
+    }
+    .aboutConnectContent {
+        order: 0;
+        margin-top: -100px;
+        margin-bottom: 150px;
+    }
+    .aboutConnectContent p br,
+    .aboutApiContent p br {
+        display: none;
+    }
+    .cooperationBlocks {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    main .container {
+        max-width: 90%;
+        /* left: 0; */
+    }
+    .aboutFeaturesImg img {
+        height: 350px;
+    }
+    .aboutApi,
+    .cooperation {
+        margin-top: -100px;
+    }
+    .cooperationPersonCard {
+        /* margin-top: ; */
+        margin-bottom: 30px;
+    }
+    .aboutApiContent {
+        margin-top: -50px;
+        margin-bottom: 150px;
+    }
+    .header form {
+        text-align: center;
+    }
+    .cooperationSponsors img {
+        display: none;
+    }
+    .about h2 {
+        font-size: 28px;
+        line-height: 42px;
+    }
+    .cooperationTitle h2 {
+        margin-top: -55px;
+        margin-bottom: 50px;
+    }
+    .subHeaderTitle {
+        font-size: 42px;
+        line-height: 48px;
+        margin-bottom: 35px;
+    }
+    .subHeaderText {
+        font-size: 18px;
+        margin-bottom: 55px;
+    }
+    .joinTitle h2 {
+        font-size: 28px;
+    }
+    .greenButton {
+        margin-bottom: 35px;
+    }
+    .subHeader {
+        padding-top: 40px;
+        padding-bottom: 150px;
+    }
+    .footerNavLogo {
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    .footerBusiness .mainFooterLink,
+    .footerBroker .mainFooterLink,
+    .footerDeveloper .mainFooterLink,
+    .footerCunsomer .mainFooterLink {
+        font-weight: 500;
+        font-size: 12px;
+    }
+    .footerBroker {
+        margin-left: 10px;
+    }
+    .footerCol a {
+        font-weight: 500;
+        font-size: 10px;
+    }
+    .footerContact a {
+        font-size: 12px;
+    }
+    .footerContact img {
+        width: 33px;
+        height: 33px;
+    }
+    .topLine a,
+    .botLine p {
+        font-size: 7px;
+    }
+    /* Popup */
+    .popup-content {
+        max-width: 80%;
+        padding-top: 35px!important;
+        padding-left: 35px!important;
+        padding-right: 35px!important;
+        /* height: 649px; */
+    }
+    .form-btn {
+        max-width: 200px!important;
+    }
+    .popup-content {
+        max-height: 600px;
+    }
+    .popup-follow-content {
+        max-height: 500px;
+    }
+    /* OTHER */
+    .otherMainHeader {
+        height: 200px;
+    }
+    .otherMainBusiness {
+        width: 100%;
+    }
+    .otherHeader .headerLink {
+        width: 200px;
+        height: 106px;
+        /* display: none; */
+    }
+    .otherHeader form input {
+        margin-top: 25px;
+    }
+    .whereNav p {
+        margin-top: 50px;
+    }
+    .otherMain .container {
+        width: 90%;
+        /* margin-leftf: 5px; */
+    }
+    .weInformation {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .weInformation .weContent {
+        order: 0;
+    }
+    .weInformation .weContent h1 {
+        margin-top: -50px;
+    }
+    .weInformation .weContent .weContentText {
+        margin-top: -70px;
+    }
+    .weInformation .weInfo {
+        order: 1;
+    }
+    .weContentBtn {
+        width: 288px;
+        height: 49px;
+    }
+    .worksCards {
+        column-count: 2;
+    }
+    .worksCard {
+        width: 165px;
+        height: 290px;
+    }
+    .worksCardContent {
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+    .worksCardContent h3 {
+        font-size: 18px;
+    }
+    .worksCardContent p {
+        font-size: 14px;
+    }
+    .worksCardContent p br {
+        display: none;
+    }
+    .worksCard2,
+    .worksCard1,
+    .worksCard3,
+    .worksCard5,
+    .worksCard6,
+    .worksCard4 {
+        margin-bottom: 20px;
+    }
+    .worksCard5,
+    .worksCard6 {
+        margin-bottom: 100px;
+    }
+    .becomeBroker {
+        display: flex;
+        flex-direction: column;
+    }
+    .becomeBroker .becomeBrokerImg img {
+        max-width: 100%;
+        margin-top: 150px;
+    }
+    .brokerExplanationService .brokerExplanationServiceL h3 {
+        font-size: 24px;
+    }
+    .becomeBrokerImg img {
+        margin-bottom: 50px;
+    }
+    .becomeBroker {
+        margin-bottom: 50px;
+    }
+    .becomeBrokerInfoBtn {
+        width: 270px;
+        margin-left: 20px;
+    }
+    .brokerFaqBlockTopLine {
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-bottom: 15px;
+        padding-right: 0px;
+        margin-left: 90px;
+    }
+    .brokerFaqBlockTopLine p {
+        font-size: 16px;
+        margin: 0;
+    }
+    .brokerFaqBlockBotLine p {
+        padding: 15px;
+        font-size: 12px;
+    }
+    .brokerFaqBlockLeftImg {
+        opacity: 0.4;
+    }
+    .brokerFaqBlock {
+        margin-bottom: 80px;
+    }
+    .brokerHelpTitle {
+        margin-top: -80px;
+    }
+    .brokerHelpBlocks {
+        display: flex;
+        flex-direction: column;
+    }
+    .brokerTrustTitle {
+        margin-top: -100px;
+    }
+    .brokerTrustCard {
+        max-width: 95%;
+    }
+    .readyBrokerForm {
+        margin-top: -70px;
+    }
+    .readyBrokerForm form input {
+        margin-top: 15px;
+    }
+    .readyBrokerForm {
+        margin-top: 50px;
+    }
+    .readyBrokerForm form button {
+        width: 312px;
+        height: 66px;
+    }
+    .readyBrokerForm {
+        margin-bottom: 0;
+    }
+    .brokerTrustBlock {
+        max-width: 95%;
+    }
+    .readyBroker {
+        margin-bottom: 50px;
+    }
+    .businessInfo {
+        display: flex;
+        flex-direction: column;
+    }
+    .businessInfoImg img {
+        max-width: 90%;
+        margin-top: 130px;
+    }
+    .businessPartnership {
+        display: flex;
+        flex-direction: column;
+    }
+    .getPartnerBlocks {
+        max-width: 90%;
+    }
+    .getPartnerBlock {
+        margin-left: 5px;
+    }
+    .letsGo {
+        display: none;
+    }
+    .getPartnerBlock img {
+        width: 100px;
+        object-fit: contain;
+    }
+    .bussinesCompaniesTitle h2 {
+        font-size: 32px;
+    }
+    .bussinesCompaniesTitle p {
+        margin-top: -20px;
+        font-size: 16px;
+    }
+    .developerInfoContent h1,
+    .developerPaymentsTitle h1,
+    .weInformation .weContent h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .developerPaymentsTitle h1 {
+        margin-bottom: 15px;
+    }
+    .getDeveloperBlock p {
+        font-size: 12px;
+    }
+    .developerPartnerBlocks {
+        margin-top: 40px;
+    }
+    .developerPayments {
+        margin-bottom: 40px;
+    }
+    .developerBenefitBlock1,
+    .developerBenefitBlock2,
+    .developerBenefitBlock3,
+    .developerBenefitBlock4 {
+        margin-bottom: 20px;
+    }
+    .helpCotnactsBlocks {
+        display: flex;
+        flex-direction: column;
+    }
+    .helpCotnactsBlock {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+    .helpCotnactsBlockContent1 p {
+        max-width: 95%;
+    }
+}
+
+
+/* Popup*/
+
+
+/* Pop up windiw */
+
+.popup-header {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.popup-follow p {
+    margin-bottom: 80px;
+}
+
+.popup-follow-Btn {
+    margin-top: 160px;
+    margin-left: 18%;
+}
+
+.popup,
+.popup-follow {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 919;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+    width: 525px;
+    height: 649px;
+    position: fixed;
+    left: 50%;
+    top: 5%;
+    background-color: #ffffff;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    padding: 4rem 6rem;
+    border-radius: 10px;
+}
+
+.popup-form {
+    margin-top: 3rem;
+    padding: 0;
+}
+
+.main-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-form input {
+    padding-top: 15px;
+    padding-left: 41px;
+    padding-bottom: 13px;
+    font-size: 18px;
+    color: #323232;
+    border: 2px solid #080068;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.main-form input {
+    margin-bottom: 40px;
+}
+
+.popup-form input {
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-bottom: 10px;
+    padding-right: 70px;
+    margin-bottom: 40px;
+    margin-top: -10px;
+}
+
+.form-btn {
+    width: 252px;
+    height: 55px;
+    font-weight: 800;
+    margin-left: 43px;
+    margin-top: -20px;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.popup-close {
+    position: absolute;
+    top: -1.3rem;
+    right: -1rem;
+    width: 76px;
+    height: 76px;
+    text-align: center;
+    border: none;
+    font-size: 3rem;
+    color: #C2BEEB;
+    background: #FFFFFF;
+    box-shadow: 2px 4px 24px rgba(2, 0, 32, 0.25);
+    border-radius: 50px;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.popup-header {
+    font-family: "ProximaNova_bold", sans-serif;
+}
+
+.popup {
+    display: none;
+}
+
+.popup-follow {
+    display: none;
+}
