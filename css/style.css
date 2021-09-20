@@ -109,6 +109,19 @@ header {
     font-size: 16px;
 }
 
+
+/* .otherMainPrivacy {
+    height: 500px;
+} */
+
+.otherMainPrivacy .container {
+    padding-top: 170px;
+}
+
+.otherMainPrivacy .container p {
+    max-width: 65%;
+}
+
 @keyframes show_header {
     0% {
         opacity: 0;
@@ -1116,10 +1129,26 @@ footer {
     margin-bottom: 150px;
 }
 
+.article-container {
+    max-width: 90%;
+}
+
+.article-container h1 {
+    font-size: 32px;
+    line-height: 38px;
+    margin-top: 50px;
+}
+
 
 /* AdAptation */
 
 @media (max-width: 540px) {
+    .otherMainPrivacy .container .article-content p {
+        font-size: 14px;
+    }
+    .otherMainPrivacy .container .article-content р2 {
+        font-size: 34px;
+    }
     .form-btn {
         margin-left: 13px!important;
     }
