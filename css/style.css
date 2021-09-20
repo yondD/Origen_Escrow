@@ -95,6 +95,8 @@ header {
     display: block;
     object-fit: contain;
     margin-right: 40px;
+    width: 160px;
+    margin-left: 150px;
 }
 
 .header_fixed .menu-list {
@@ -1134,13 +1136,13 @@ footer {
         position: absolute;
         top: 40px;
         right: 35px;
-        width: 75px;
+        width: 45px;
         height: 5px;
         background-color: #fff;
         border: none;
         cursor: pointer;
         margin-top: 65px;
-        margin-right: -25px;
+        /* margin-right: -5px; */
     }
     .menu-button:before {
         border-radius: 5px;
@@ -1149,11 +1151,24 @@ footer {
         position: absolute;
         top: 0;
         left: 0;
-        width: 75px;
+        width: 45px;
         height: 5px;
         background-color: #fff;
         transition: transform 0.2s;
         margin-top: -15px;
+    }
+    .header form input {
+        margin-top: 30px;
+    }
+    .header .logo {
+        max-width: 160px;
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+    .header_fixed .scrollLogo {
+        max-width: 160px;
+        margin-left: 15px;
+        display: inline-block;
     }
     .menu-button:after {
         border-radius: 5px;
@@ -1162,7 +1177,7 @@ footer {
         position: absolute;
         top: 0;
         left: 0;
-        width: 75px;
+        width: 45px;
         height: 5px;
         background-color: #fff;
         transition: transform 0.2s;
@@ -1376,7 +1391,16 @@ footer {
         max-width: 200px!important;
     }
     .popup-content {
-        max-height: 600px;
+        max-height: 700px;
+    }
+    .brokerPopUpContent {
+        /* top: 10%; */
+        margin-top: 5%;
+        /* margin-right:    10px; */
+        max-height: 570px;
+    }
+    .brokerPopUpContent button {
+        margin-left: 12px!important;
     }
     .popup-follow-content {
         max-height: 500px;
@@ -1521,8 +1545,9 @@ footer {
         margin-top: 50px;
     }
     .readyBrokerForm form button {
-        width: 312px;
+        width: 280px;
         height: 66px;
+        margin-left: -1px!important;
     }
     .readyBrokerForm {
         margin-bottom: 0;
